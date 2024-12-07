@@ -28,27 +28,31 @@ p {
   color: #666;
 }
 
-.link-list {
+input[type="file"] {
+  margin: 20px 0;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#link-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
 }
 
-.link-list li {
-  margin: 10px 0;
+#link-list li {
+  margin: 5px 0;
 }
 
-.link-list a {
+#link-list a {
   text-decoration: none;
   color: #ff69b4;
   font-weight: bold;
-  border: 2px solid #ff69b4;
-  padding: 10px 15px;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.link-list a:hover {
-  background-color: #ff69b4;
-  color: #fff;
+#link-list a:hover {
+  color: #333;
 }
