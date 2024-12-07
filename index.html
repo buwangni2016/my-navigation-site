@@ -9,13 +9,14 @@
 <body>
   <div class="container">
     <h1>我自己网站导航</h1>
-    <p>快速访问常用网址</p>
-    <ul class="link-list">
-      <li><a href="https://www.google.com" target="_blank">Google</a></li>
-      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-      <li><a href="https://www.taobao.com" target="_blank">淘宝</a></li>
-      <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
-    </ul>
+    <p>上传浏览历史记录文件，自动生成导航链接</p>
+    
+    <input type="file" id="upload" accept=".csv">
+    <div id="output">
+      <h2>导航链接：</h2>
+      <ul id="link-list"></ul>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
