@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "导航历史记录助手",
+  "version": "1.0",
+  "description": "通过浏览器历史记录生成常用网站导航页面",
+  "permissions": [
+    "history",               // 访问历史记录权限
+    "storage"                // 使用扩展存储
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://your-website.github.io/*"  // 限定网站访问权限
+  ],
+  "action": {
+    "default_title": "点击获取历史记录",
+    "default_popup": "index.html"       // 打开您的网站
+  }
+}
